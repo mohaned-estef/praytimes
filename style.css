@@ -1,0 +1,97 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #333; 
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+}
+
+.navbar h1 {
+    color: white; 
+    font-size: 30px; 
+    margin: 0;
+    white-space: nowrap; 
+    animation: moveText 5s linear infinite;
+}
+
+
+@keyframes moveText {
+    0% {
+
+        transform: translateX(100%);
+        
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%); 
+    }
+}
+
+.hero{
+    width:100%;
+    height: calc(100vh - 34px);
+    background: url('./image2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero .cards{
+    width:90%;
+    padding:20px;
+    background-color: rgb(222, 184, 135,0.3);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero .cards .fajr,.dahr,.asr,.maghrib,.asha{
+    width:15%;
+    padding-top:40px;
+    padding-bottom:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .cards h4{
+    font-size: 24px;
+}
+
+.hero .cards h5{
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
